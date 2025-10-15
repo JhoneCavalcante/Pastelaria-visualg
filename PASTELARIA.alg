@@ -8,13 +8,21 @@ Var
 // Seção de Declarações das variáveis 
 
    preco_pastel, preco_coxinha, preco_suco_agua, preco_suco_leite : real
-   preco_agua, preco_refrigerante : real
+   preco_agua, preco_refrigerante, calculo : real
    qtd_pastel, qtd_suco_agua, qtd_suco_leite, qtd_refrigerante : inteiro
    opcao, qtd_agua : inteiro
-   calculo : real
+
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+   // Adicionando valores as variáveis dos itens
+   preco_agua <- 3.50
+   preco_pastel <- 6.50
+   preco_coxinha <- 6.00
+   preco_suco_agua <- 5.00
+   preco_suco_leite <- 6.50
+   preco_refrigerante <- 4.90
 
    //Nome da pastelaria
   escreval ("========================================")
@@ -23,15 +31,15 @@ Inicio
   escreval ("")
   
   // Exibindo menu para escolher os itens e exiber os preços
-  escreval (" ################    Bem vindo!    ################")
-  escreval (" === Escolha a opção númerada dos itens no menu ===")
-  escreval (" 1 - Água mineral 500ml:         R$ 3,50 a unidade")
-  escreval (" 2 - Pastel:                     R$ 6,50 a unidade")
-  escreval (" 3 - Coxinha:                    R$ 6,00 a unidade")
-  escreval (" 4 - Suco c/água 500ml:          R$ 5,00 a unidade")
-  escreval (" 5 - Suco c/leite 500ml:         R$ 6,50 a unidade")
-  escreval (" 6 - Refrigerante KS:            R$ 4,90 a unidade")
-  escreval (" 0 - Finalizar pedido")
+  escreval ("################    Bem vindo!    ################")
+  escreval ("=== Escolha a opção númerada dos itens no menu ===")
+  escreval ("1 - Água mineral 500ml:      R$ ", preco_agua, " a unidade")
+  escreval ("2 - Pastel:                  R$ ", preco_pastel, " a unidade")
+  escreval ("3 - Coxinha:                 R$ ", preco_coxinha, " a unidade")
+  escreval ("4 - Suco c/água 500ml:       R$ ", preco_suco_agua, " a unidade")
+  escreval ("5 - Suco c/leite 500ml:      R$ ", preco_suco_leite, " a unidade")
+  escreval ("6 - Refrigerante KS:         R$ ", preco_refrigerante, " a unidade")
+  escreval ("0 - Finalizar pedido")
   escreval ("")
   
   //Escolhendo os itens do menu
